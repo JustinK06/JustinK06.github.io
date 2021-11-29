@@ -1,37 +1,196 @@
 <!DOCTYPE html>
 <html>
-<head> <!-- The head is where the style is --> 
-	<meta charset="utf-8">
-	<title></title>
+<head>
 
-	<style type="">
+
+<link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+
+
+
+<style type="text/css">
 	
-	/*in the style section we add curly brackets to add style to the presentation*/
-	
-	#justin{
-		width: 200px;
-		height: 200px;
-		color: black;
-		font-size: 140px;
-		background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISEhgSFBUYGBgYGBgYGBkYGBIYGBgYGBgZGhgYGBgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHhISHjQrJCs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0MTQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAPsAyQMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBQYEBwj/xABAEAACAQIDBQUGAggFBQEAAAABAgADEQQSIQUGMUFhIlFxgZEHEzKhscFCUhQzYnKCktHwFSNDssIkU6LS4hb/xAAZAQACAwEAAAAAAAAAAAAAAAAAAQIDBAX/xAAlEQEBAQEAAgIBBAIDAAAAAAAAAQIRAyESMQQiQVGxE2EycYH/2gAMAwEAAhEDEQA/AN9Gx0J02A2JHxsCV+28S9Og7oCWA0A11jtjYs1qCVGFiw1HXnKbfXadTDohXQEm58uEn3IxJqYNGPG7X9ZXNX5WLLmTMq/iwhLFYhaEIGIQhAC8S8IQBYkIkAIQtC0CESLCAJCLCANtC0WEAbaLaLaEAlhHRLSKRIRbRI+kw/tKw7tSRwDZT2j3S43KwyU8GmQ3zdo+J4zn9oOMppgzTJPvHYWGmXLzvK72b49mpvRPBNQeh5Smanzqyy/GNvCOhL1YhCEAISLE4inTXO7qijmxAHzlHW3ywKG3vCdbdlGt6mQupPupTNv0v4Sjob24F+FYD94MvzIl1Sqq4zIwYd6kEeohNS/VKyz7OiRYSZEhFhAjYWiwgCWhFhaAJCLCBktC0WLAJYkdEkUiQixyJ+JvhHEnSR1qZnaczbeR5r7RsXTd1prqUGp5DpIPZrjkSq9NiAXAK3525Rm82zRUrvURlCltANZTUNnVKbq6kXUgi3SZ877rq655OPaITl2ZilqU1YEE2F+hnZNXWfhsz+8m8qYUZFGZ+7klxoT3npOveXan6Lh2cfG3YTn2iDr5AE+k8wWnVxFTKLu7i/M3ubkk9+vlpM/m83xnJ9rvD4vle36ce19qVa7lqjlj1JsOgH4RKV6pJ0msxW6FVF7bBTzBuSB1la2755P8pj/yS++tn+O/UiiD25y12Rt2vhmDU3I714qehHAzrobvD8Z8LfedI2BTtxN4TyyX0L4LZ7ei7sbyU8anJKijtJfiPzL3j6S/nhH+ZhaoZCQyEMDe3Dh4z2vZWOXEUErLoHUG3ceDDyIIm7w+X5T2w+Xx/CuyNjoS5UbCOhAGwjoQM2Fo6EAIQhAJIR1okRklPvCWdMj1AiZTYW1ZuQlxK7bdMMguOZ+kp807lb4bzTzWrVUa6m3GR++XTjrwl1t/BIoTKLZ118ZSvTs6L5TJn3OtGvV40u5lFnqFw5yqNR3mbiUO6NFUpvlH4zL+bvHOZZN3umF9olQl6FPo7W481APyMXdLEJhag0Ug8DrmHDThpwHrOL2jVcuJpa/6en87XnDsrMzqbHLe/wC93aTnflX9Vbvxp+mL/ena6PUZbamxJ+Q8OHzlHTdTwnXtTDKoBY63sO8gDie6V9Oug5iZp/xapJ3jtpWN9OEc9rTnFZQQb6GRPtaguhcesjy36WWyfaq25RJIYeBmx9mOLzUKlEm+R8yjuVx/7K3rKAvTqL2GDKdDOz2fYinRxVam7quZVAvzYPpb+b6TZ+LrmpKxflY7Ox6TaFosJ1HOJaJaOhAG2hHRIdBIRbQgRIWi2hDoTQiwkUzLTi2qhKadfpO+GPoOcOWSwIudecp815lPxTunn223/VnkF1lFVN6inlf7y0xim5Dd842SZ8+pxfr3etrumb0n/fMvpkNz6lQOyAXQ6k9xmvmzF7ll1OaePb27ZOKqpUKFBTzodb3Aaw+YOvWXdJ1pr7y+gGbqAB8zKPeLCmhimoKAVz8xrkds9r+DCWRw4qIKQJHwqDzOmlzOT57br26vikzn9P0zO39s1K9Vmdyg5IlyfEgHjK5GKWN3N9RcD52OnhNHW2MKZIBtry1Pnecr4emp11J7zc26DlH2c4Ul+3dSpZqFydQLiZ9sGxqfAg11z5vrea5KBTssCCBw5jykRxKA2YW5AkaHpf8ArK+/G+mj4/KTqswOCZHvlA6oWKnoVP2lgKCqajC+clWB10sFt8wZaYekCt9DccZDgqBeuigE3Kg/zW18tYpbbwrmZ916UhJAJ0NhcdecWLCd2OHSQiwgRsI60S0ASEW0IAkIsLQCaJHSKtWVBdjaQt4lzpwRzeyk6Ei3DzmX2/tzEkGhZUC6HLfXzl1it5LJlppx7IJ5noJk8ac9Qqx14uRwA7pj1q617+mvOZnP+1M7tfUmQtm1+U63RTTepr8QCzkqW0yk8NfGSmULXRs7aFag+ZPMcjNpsDbZxJKsmUqLk30MwIYjnLTYO1vcVMz3ynQ2lmLc3/SvUli0332WhZcSTbQIbAk5gewRbmbkeQmbxZqYezOCjqq5geIJUEX62Inp2Dx1OquZGB+sxftCwwDK/J1sfFdCfRl9JV+T4Zy7i/wea9maxtbap1JPfODDYiouaoqhi3NuQHACQVKV1PepF/oD9IzAvVdzTzKmmmYcbDkTMuZ9tWtfS4w+165N3BJJ48dT3yxGZ1Ic5gdLWFomzdh02INTFqFzWbLkGlrggkm3USHbODw7KtPD1HqOxUl7tlUdktrz/Fw7/WuyWrc79ejsDUqU393clSCV6W4gz0Dd/ZChadfM1yCSulibkA35C1tOkwWBwuRsurEAAE6knifM9mes4Kj7umiHiqqD4ga/O8v/ABMTW7bPpR+Z5NZzJL9/0mtC0dGzqOUSEWJBIQhCAEIQgiIQhGCYivbRdTKmsl2KsblRmdvyjko6ywxNVaVN6vEJdV/afmfWZ3a1U08MqE9uqcznnrxnOu9brfnMzHP+mA569tF7NMffxlT7wim7Hi5tf6x+OfLSSn33c/acT1CQF5AkyeYr1TC5tl5XvGWimJLOoEhaLC0OjiXC4qpSYOjEH5HxEvsfiDtHCsiretSBqBRxZV0a3kQbd4EzTEAEk2tqT0jdyt7Ew+0wz2FKopoFj+C7KVfoCwAPQjui1r9Nn8nme+z9mbdwGvfQix8DwPkbSUcDcDMNO8T0bfncUVGbE4UKrMSz072VyeJX8rHu4eE84zGkxp1VZWGhBFj0mW41lqz5M6h+HzXtlHjYTQYZAFzc7SlpV04gi070x66AangBKdS1pzrMjWbo7O95WNVh2adj0Ln4R5cf5ZupS7oUsuEQ82LsfEsR9AJdzpfj4mcTn7uX+Ru63e/9CJFhL1JIlotosAbaFo6JaANi2iwjBsItoWgGe29jQy0qSg2UZmU8SeUo94sVnrBLahVUDqf7EsNuVfebUUL8KMoNuFlFzfzmc2tVL44VPwrUufBTb7TnZnv/AMbNX+zts1GFTK9lKhVt5X+84a1TKLk2httjWr+8HDPfyAsJzbSpF1AHeJOfSvX26Wey3J84ivdbg6d8ixKXplekr/8AEadOmEzZja3Z1HrJBZ0qgYXBvIqmNSmLu4+/pM2NrMilUNrkm9hfWVdWsWNySYHIttqbaNRci6Lz7z3X6SmL3jCY0SNSk49l9mW9v6RTGCxDXqIv+WzH40H4SebL8x5zTbc3cpYlbOgbuNtR4HiJ89YXE1KTrURirowZWHEEf3wn0PuPvJT2jhw+gqJZaifla3Ed6niD/STl+U5VdnxvYwW0fZ7WS70O2BqUPx2/ZPBvDj4yt2Xs4motJFL1HOVU535lvyqOZ5WnsO8e3KGzqBr1dSTlRB8TueCjpzJ5CeUYbejGUsU2LU0wXbM6inTCOD+EsBm4c73+cpvi7ftdnzcn09Nw1RMPXXZ/4kw6VFb893dH9GCn+OWU8o383mZ8VhMbh2KXoML6EqwqMHpm4sbXHLgQZ37H9pXBcTTv+3T0J6lDp6HymnGpJxm3m29ekQlTgN5cFXAyV0ufwucjeFmtfylsNdRLeq+CELQh0EtCLCPoJCLCAJaJaOhDoed0sQXqtU1FizEnnKgMzPmIPEngec2O0No4ZNEXpoBKXFYymVJF/lMGa26iifMTw5yHG1xTUu2gHzPIDrLL3ynjMlvZirslMHQXY+J0H0PrJ9iviux+2KlQ24LyUffvMr2rExhaMvDqXEheNJjLwvDpnQzQEQwB0ut1tvVcBiVrpcjg6cnQ8V8eYPf5ylEWBX29p29Rp7QC4lmz06iWQckXUgqOTXvfnfwmDpp7kvh6hzW1QgXJB4afWTbh7f8Adv8AolRuxUa9MnglXlf9ltAetj3zv3hpqMTmUW7A05g5jcHwMtklz2KrbLxXVcMa2BqsoJFFxUU2ItbsVV15FQreNLrM4rzabETOmIwn/fp1FX9+xdL+YI85hEa6iV1Oe3WtW3OWWA27iaB/yqrp0DHL/LwMpAY8NH0rHpexvaU62XEIHH50sr+JX4W+U2uyt6cHiXFOnU7Z4KwZSegvoT0BngSNJkrFWDAkEHQjiDxBEnN2I3EfSUJUbq7U/S8IlU/HYq/766E+eh85by6XsVWCEIRkIQhAPKNogqyjU6SHE0yEB1uY5nc6m0YS3Mznz02VEik8pjd4XPvyDyC/S/3m2cHvmL3jH/UNryX/AGiS70pFReJaDCNvGZTCJeEAcDFIjI4GAKrco+MIiqYyOmqwm1TXClzd1GVj+a3BvEjj1mVkuGqmm4Ycj6jmJKXiOp1s6dY03WovFSCPEEEfSZPF5feVMvw52K/uliV+Vppqbh1vyIuP785lqwtUcftGK0ZIIqxBFgZwjmOkZFJ0jD1n2SYu9OtSJ4MjgfvAqx/8V9Z6HPCtx9sDCYxHc9hro9vytz8iFPlPdhLcXsU7nKSLCEsViEWEA8exLinc8Y57ZQ3S8j2qPrHP8H8MxNaLB1feAkjhMvvVTAqg96gHyPH5j0mk2cLK3jKHete2h6H7R0ozRHdGkxzLGwSEIkIARQYkIEkBgYwGPBjM5TFjOGsfGS/2HiMyFOa8PA8P78JWY8Wqv4/YRdk1clVe5uyfPh8wIm0f1zeX0gj+6EGOjAYsDPBgzRt41oqHXRafRmxqpqYajUIsWpIxB6oDPmxXns/su2stTCnDs96lMsQhvcUzltY8wGJ05XEni+1e56bmEIS5UIQhGHlWP2czMQGFuN7yOvhjlCgg8jJaoMjvMU61XiHDYQoCO+UW9ODPuxU45WAPQG/3tL7NrIsfTFSm9O3xKQOh5H1tH7L084cSNhJ6i20PKQsIJ0yEIkZFiGEW0CJFvEMIGeDFUxkWBJkbKQ3cQfTWdGPe9Vz4fQTjvHs9zfoPkBGDwYt4wGKDAHEwEaTOjB4c1G0Gg4/0itCNTrNd7P8AaaYbGo7tlRsyOTwAYdknpmCyrxtMVSlKmq3S+ZgLWv8AhvzncmApJSK5Sah+E37Wbw4WhNSHcW9e+CLMf7PNq1KlFsNWuKlG1r8Wpn4TfnY6X7rTYTTm9nWWzl4IRYWjJ421M/mMQUup9ZXYZqjA3Y6TmZKgJux9Zialz7tevrAov9mVz02amDfWc6qQQLwCn2/hvd1SR8L9oefxfP6ypYTT7fwvYzflF/Ui8zLSRxCYkeYwmMCLEhAgYQl/gGRkHZXqLCK3hydUEWaRsBSfXKB4XH0g2xqX7Q8CfvF8ofxrOCOWaE7Bp/mYea/0nSm6fvqNSrhWLtRt72kwGYKwNnRho66EWspBHheWb28hWfH3WYEW8MkMkfCIuptLvDFqahQO02g+5lVhrK2Y6+EtcFiqZqZmaxtYA8vPhIWVPPFjhh7kcNTwHMnvvOpWVAazt2reIH7KiV+a7NUc6fh7go/rDDurPmc2VdVU9/5j1kE1vsbbNbDYyni6iFUbsEaaoeINueubXuntyMCAQbgi4I4EHgZ847S2oahCL8CG46nhf6z1T2bbzU6uHGGquq1KdlTMwBdD8IW/Erwt3ZZo8eueqy+XPvsbyEIS3qp4dhviYdJDtTRdJPhvjfwkW1VuoA52EzNCXDD/ACllW/6weIl0tBqdMI3EDlrOI7Kqke+C9i/GOfZdG2EuhHeLeomGaeh18JUrEU0F2tMPtbCmlWemwsVIuO4kA2+cOJSuAwgYQMQhCBCS0auVgw5fSRQga+wuOVtLkHuNhLBaxmSBnbQxxHH14yGs/wAJzX8tMahtxl97OqgG0GUk9uhUFvwkXUknrdVt5zAnap5TXbh4oLVqYlhl7Hu06liGc+WVR/FH482aheTUubFVv1s5aGLYqLK9z0zc5mg02e+9YVRm5qb/AGPyJmJvLd/arP0kzQJjLxbyJ8SCoQLXNu65t6RQ8ivEvAJw0lp1SDOQNHK2sQ4+itw8aa+zqLlizAMjEm5ujEC58Ms0M8v9jW0CRXwxOnZqr/sf/hPUZbm+lWp7eI08NUVicnEHn3SOqzFwhXXTSQHaTfmMiOJ1zX175V8as7FwMNVItk+ctMNiqqYY0DSvcHW45zM/4jUtbOYp2m9vjMJLBeVZbN2g9KtnCXKi1pit76rPjarsLFirW6FVtL84oDtBtZSbx9vLVzXI7J6jUj019Y+UTnVBCEDEmIQhAhCEIAQhCAORipuOInbhcdUBAz5R8h5DgJwQgF9iar5CW7SlTqCOFpR3ky4gimU5E3HTv+kgvH0Q68LxsDEZ2aKTGXheAOvHqZFeOVoieieyTErSxdSo5snuSl9T2mdGUWHRGnrn+O4f85/lb+k8W3dxD4RBlNmbVuHE8vIWE0H/AOmrfmHoJPPefSGpO/bImm45/KIyPbj8p0xIjcy06nfBqdTvnZGxhze6e2plZtkFVUE8ST6D/wCpcsZTbe/B/F/xhYIp4XhCRSEIQgBCEIAQhCAEIQgBCEIAR9OmzXsCbC5t3Rk7dkfrl8/9pgHFCa98NTbVlBPfYXi0tn0R/pr5i/1j4XWUpUWc2VST0F/XulnhdkOCGYDTW3HXrNNYKNAB4ARRDg6rBTfu+sMlTu+ss+cI+Iv/2Q==);
+	.header{
+
+		font-size:100px;
+		font-family: 'Zen Antique Soft', serif;
 
 	}
 
+	.regular{
+
+		font-size:50px;
+		font-family: 'Zen Antique Soft', serif;
 
 
 
-	</style>
+	}
 
+	#leftDiv{
+		width:20%;
+		height:1400px;
+		background-color: rgb(179, 25, 66);
+		position:absolute;
+		left:0%;
+		top:0px;
+	}
+
+	#rightDiv{
+		width:20%;
+		height:1400px;
+		position:absolute;
+		left:80%;
+		top:0px;
+		background-color: rgb(10, 49, 97);
+	}
+
+	#centerDiv{
+		width:60%;
+		height:1400px;
+		position: absolute;
+		left:20%;
+		top:0px;
+		background-color: rgb(255, 255, 255);
+
+	}
+
+	#sergioDiv{
+		background-image:url("sergio.jpg");
+	}
+
+	.picture{
+		width:100%;
+		height:200px;
+		background-size:contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	#obamaDiv{
+		background-image:url("obama.png");
+	}
+
+	.picture{
+		width:100%;
+		height:200px;
+		background-size:contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	#hocDiv{
+		background-image:url("hoc.png");
+	}
+
+	.picture{
+		width:100%;
+		height:200px;
+		background-size:contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	#capitolDiv{
+		background-image:url("https://upload.wikimedia.org/wikipedia/commons/b/b2/United_States_Capitol_-_west_front.jpg");
+	}
+
+	.picture{
+		width:100%;
+		height:200px;
+		background-size:contain;
+		background-position: center;
+		background-repeat: no-repeat;
+
+	}
+
+	#whitehouseDiv{
+		background-image:url("https://d.newsweek.com/en/full/1711273/25-jobs-white-house-what-they-do.jpg");
+	}
+
+	.picture{
+		width:100%;
+		height:200px;
+		background-size:contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	#supremecourtDiv{
+		background-image:url("https://www.abajournal.com/images/main_images/SCOTUS_panorama1.jpg");
+	}
+
+	.picture{
+		width:100%;
+		height:200px;
+		background-size:contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+</style>
 </head>
 
 
-<body> <!-- This is the opening tag for the body. The body is where, "stuff" is. --> 
 
-	<div id="justin">
+<body>
+
+	
+<div id="leftDiv">
+	
+	<div id="hocDiv" class="picture">
+
+		
+
+	</div>
+	
+	<div id="capitolDiv" class="picture">
 
 		
 
 	</div>
 
-</body> <!-- The body closing tag. --> 
-</html> <!-- html closing tag. -->
+	<div id="whitehouseDiv" class="picture">
+
+		
+
+	</div>
+
+	<div id="supremecourtDiv" class="picture">
+
+		
+
+	</div>
+
+
+	<p class="regular"></p>
+</div>
+
+
+<div id="rightDiv">
+	
+
+	<div id="sergioDiv" class="picture">
+
+		
+
+	</div>
+
+
+	<div id="obamaDiv" class="picture">
+
+		
+
+	</div>
+	<p class="regular"></p>
+</div>
+
+
+<div id="centerDiv">
+	<p class="header"> </p>
+	
+</div>
+
+<center>Journal Entries: https://docs.google.com/document/d/1Dj7ABNnsfm4iC9qE6IKaJF7Nj4CmMXU108SGmoTsamw/edit?usp=sharing</center>
+
+
+
+</body>
+</html>
