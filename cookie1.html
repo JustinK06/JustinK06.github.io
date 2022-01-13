@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+
+	
+function MakeCookie(){
+ 	var cookie = document.createElement("div")
+
+ 	document.body.appendChild(cookie);
+
+ 	cookie.style.height = "200px";
+ 	cookie.style.width = "200px";
+ 	cookie.style.backgroundImage = "url(cookie.png)";
+ 	cookie.style.display = "inline-block";
+
+cookie.style.backgroundSize = "contain";
+
+ 	cookie.addEventListener("click", function(){
+	cookie.style.backgroundImage = "url(dinosaur.png)";
+		cookie.style.display = "inline-block";
+		cookie.style.position = "relative";
+
+
+ 	})
+
+ 			
+}//End of function.//
+
+
+setInterval(MakeCookie, 1000)
+</script>
+
+</body>
+</html>

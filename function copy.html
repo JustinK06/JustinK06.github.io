@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		.hearts{
+			width:20px;
+			height: 20px;
+			background-color: white;
+			background-image: url("https://i.natgeofe.com/n/e7bbdc38-6f32-42cc-a59a-fba70c0910db/clownfish_03.jpg?w=636&h=423");
+			margin:5px;
+			background-size:contain;
+
+		}
+
+
+	</style>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+	//var number = 100;
+
+	//function addition (thing){
+		//console.log(number + thing)
+
+	//}
+
+	//addition(number) 
+
+		function makeHeart(){
+			var heart = document.createElement('div')
+			document.body.appendChild(heart);
+			heart.classList.add('hearts')
+
+
+		}
+
+		document.addEventListener("click", makeHeart) 
+</script>
+
+	
+</body>
+</html>

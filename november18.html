@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+	<center>What Taylor Swift song are you?</center>
+
+
+	<div id="box"></div>
+
+<script type="text/javascript">
+
+	var box = document.getElementById('box');
+
+var swiftSongs = ["Mr. Perfectly Fine - You're a strong, independent person. You won't let anyone get you down.","You Belong With Me - You're an incredible person to be around. You're funny and energetic and people often look forward to being in your presence.", "Love Story - You're the best friend to EVERYONE. Go find someone and sing this song with them.", "All Too Well - (The 10 minute version of course). You like to be alone a lot, but you are independent and ambitious. Don't let people underestimate you!", "Bet You Think About Me - If you know this song you're keeping up with the times! You're a very social person.", "Red - You are a very loveable person.", "Blank Space - You tend to scare people with your confidence, but in a good way.", "Shake It Off - You are a very silly person that everyone wants to be around.", "Wildest Dreams - You love to get lost in the clouds and think about the most random things. You live in the moment.", "Delicate - You can stress over how people view you, but what you don't realize is that they are jealous of you.", "ME! - You know yourself very very well. You know what you want in life.", "22 - You're not 21 but you're also not 23 ;)", "Paper Rings - You're very creative and able to think fast.", "Lover - You are a kind and caring person.", "Fifteen - You are the result of 3x5. :P"]
+
+var random = Math.floor(Math.random()*15)
+	
+console.log(random)
+
+box.innerText = swiftSongs[random]
+
+</script>
+</body>
+</html>

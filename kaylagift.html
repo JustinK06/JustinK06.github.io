@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+
+		body{
+			background-color: rgb(220, 208, 255);
+
+		}
+		
+		#turkeyDiv{
+		background-image:url("turkey.png");
+	}
+
+	.picture{
+		width:100%;
+		height:200px;
+		background-size:contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+</style>
+</head>
+<body>
+
+
+	<center>🦃❤️🧋Reason I'm thankful for you🧋❤️🦃:</center>
+
+<div id="turkeyDiv" class="picture"></div>
+
+	<div id="box"></div>
+
+<script type="text/javascript">
+
+	var box = document.getElementById('box');
+		var turkey = document.getElementById('turkeyDiv');
+
+
+var thankfulReasons = ["Your sense of humor is impeccable","You have ok taste in music (umbrella ella ella ay ay ay)", "You're really smart and creative", "You only like expensive things", "You know what you want and don't stop until you get it", "You cook great food (including pancakes)", "You take a joke well (red nose girl)","You can do a cartwheel really really well", "You are very independent", "You are very resilient and never give up", "You write a lot and are fun to be around", "You have great taste in TV", "You're obsessed with bubble tea which then allows me to get bubble tea","You wear buns sometimes","You give good hugs...when you want to","You are a great conversationalist"]
+
+
+function chooseThankfulReason ()
+{var random = Math.floor(Math.random()*16)
+	
+console.log(random)
+
+box.innerText = thankfulReasons[random]}
+
+turkey.addEventListener("click",chooseThankfulReason)
+
+
+</script>
+
+
+		
+
+	
+</body>
+</html>
